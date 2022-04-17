@@ -22,12 +22,12 @@ import com.trade.store.service.ITradeStoreService
 import spock.lang.Specification
 
 @ActiveProfiles("test")
-@WebMvcTest(controllers = TradeStoreController.class)
-@ComponentScan(lazyInit=true,basePackages=["com.trade.store"])
+@AutoConfigureMockMvc
+@EnableAutoConfiguration
 @SpringBootTest
 class TradeStoreServiceImplTest extends Specification {
 
-	@SpringBean
+	@Autowired
 	ITradeStoreService iTradeStoreService = Mock(iTradeStoreService.class)
 	
 	@SpringBean
