@@ -14,8 +14,8 @@ import spock.lang.Specification
 
 
 @ActiveProfiles("test")
-@WebMvcTest(controllers = TradeStoreController.class)
-@ComponentScan(lazyInit=true,basePackages=["com.trade.store"])
+@AutoConfigureMockMvc
+@EnableAutoConfiguration
 @SpringBootTest
 class CommonUtilsTest extends Specification {
 	
