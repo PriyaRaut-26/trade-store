@@ -20,12 +20,12 @@ import com.trade.store.model.TradeStore
 import spock.lang.Specification
 
 @ActiveProfiles("test")
-@WebMvcTest(controllers = TradeStoreController.class)
-@ComponentScan(lazyInit=true,basePackages=["com.trade.store"])
+@AutoConfigureMockMvc
+@EnableAutoConfiguration
 @SpringBootTest
 class TradeStoreDaoImplTest extends Specification{
 
-	@SpringBean
+	@Autowired
 	ITradeStoreDao iTradeStoreDao = Mock(iTradeStoreDao.class)
 	
 	@SpringBean
