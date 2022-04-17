@@ -1,0 +1,102 @@
+{
+	"id": "90fcb1ee-6ad6-4289-115d-a90b8886d8a6",
+	"name": "Trade Store Api ",
+	"description": "",
+	"order": [
+		"3df48520-6245-7d81-eddd-e57efa6e47ee",
+		"8050a1aa-be46-d5b2-808d-e1f02788ca06",
+		"4241a0b8-640d-122e-245c-f09c64840e37"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1650184833169,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3df48520-6245-7d81-eddd-e57efa6e47ee",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9001/trade-store/api/save",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "90fcb1ee-6ad6-4289-115d-a90b8886d8a6",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Save data",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1650184839381,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"tradeId\": \"t4\",\n    \"version\": \"3\",\n    \"counterPartyId\": \"cp3\",\n    \"bookId\": \"b4\",\n    \"expiry\": \"N\",\n    \"maturityDate\":\"16-05-2022\"\n}"
+		},
+		{
+			"id": "4241a0b8-640d-122e-245c-f09c64840e37",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9001/trade-store/api/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "90fcb1ee-6ad6-4289-115d-a90b8886d8a6",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1650184868954,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8050a1aa-be46-d5b2-808d-e1f02788ca06",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9001/trade-store/api",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "90fcb1ee-6ad6-4289-115d-a90b8886d8a6",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get All",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1650184860302,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		}
+	]
+}
